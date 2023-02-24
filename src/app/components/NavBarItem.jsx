@@ -1,7 +1,9 @@
 
-function NavBarItem() {
+function NavBarItem({title, param}) {
   return (
-    <div>NabBarItem</div>
+    <div>
+      {title}
+    </div>
   )
 }
 
