@@ -1,4 +1,3 @@
-
 import { BiBasketball }  from 'react-icons/bi';
 
 function Header() {
