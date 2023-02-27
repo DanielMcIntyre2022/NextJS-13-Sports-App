@@ -1,7 +1,9 @@
 
-function Results() {
+function Results({results}) {
   return (
-    <div>Results</div>
+    <div>
+        {results}
+    </div>
   )
 }
 
