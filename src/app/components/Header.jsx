@@ -5,7 +5,7 @@ function Header() {
     <div>
         <div className="header-content-left flex items-center p-5 bg-orange-200">
             <BiBasketball className='h-10 w-10'/>
-            <h1 className='ml-5 underline'>Sports Scores</h1>
+            <h1 className='ml-5 underline'>NBA App</h1>
         </div>
     </div>
   )
