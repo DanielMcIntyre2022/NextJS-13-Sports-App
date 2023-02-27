@@ -1,26 +1,24 @@
 
-const axios = require("axios");
+// import Results from "./components/Results";
 
 const options = {
   method: 'GET',
-  url: 'https://api-nba-v1.p.rapidapi.com/standings',
-  params: {league: 'standard', season: '2022'},
   headers: {
     'X-RapidAPI-Key': process.env.API_KEY,
     'X-RapidAPI-Host': process.env.API_HOST
   }
 };
 
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});
+export default async function Home() {
 
-export default function Home() {
+  await fetch(`https://api-nba-v1.p.rapidapi.com/standings?league=standard&season=2022`, options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+  
   return (
    <div>
-
+      
    </div>
   )
 }
